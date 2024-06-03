@@ -1,0 +1,100 @@
+/* App.css */
+
+/* Colors */
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #28a745;
+  --background-color: #f8f9fa;
+  --text-color: #343a40;
+}
+
+/* Typography */
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: var(--text-color);
+  font-weight: bold; /* Make all text bold */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold; /* Make headings bold */
+}
+
+/* Layout */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  flex: 0 0 25%;
+  padding: 1rem;
+}
+
+.content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.app-footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Interactive Elements */
+button, a {
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover, a:hover {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+/* Background Image */
+body {
+  background-image: url('https://www.ledr.com/colours/white.htm'); /* Path to your image file */
+  background-size: cover; /* Cover the entire frame */
+  background-position: center; /* Center the background image */
+  background-repeat: no-repeat; /* Do not repeat the background image */
+}
+/* App.css */
+.notification-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.notification {
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.notification button {
+  background: none;
+  border: none;
+  color: #000;
+  cursor: pointer;
+  font-size: 1em;
+}
